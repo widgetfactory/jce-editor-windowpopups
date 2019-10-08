@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="plugin" group="jce" method="upgrade">
+  <name>PLG_JCE_EDITOR_WINDOWPOPUPS_TITLE</name>
+  <version>1.0.0</version>
+  <creationDate>October 2019</creationDate>
+  <author>Ryan Demmer</author>
+  <authorEmail>info@joomlacontenteditor.net</authorEmail>
+  <authorUrl>https://www.joomlacontenteditor.net/</authorUrl>
+  <copyright>Ryan Demmer</copyright>
+  <license>GNU/GPL Version 2 - http://www.gnu.org/licenses/gpl-2.0.html</license>
+  <description>PLG_JCE_EDITOR_WINDOWPOPUPS_DESC</description>
+  <icon></icon>
+  <files>
+    <file plugin="editor-windowpopups">editor_plugin.js</file>
+    <folder>language</folder>
+  </files>
+  <fields name="standard">
+    <fieldset name="config"></fieldset>
+  </fields>
+  <help></help>
+  <languages folder="language/en-GB">
+    <language tag="en-GB">en-GB.plg_jce_editor-windowpopups.ini</language>
+    <language tag="en-GB">en-GB.plg_jce_editor-windowpopups.sys.ini</language>
+  </languages>
+</extension>
