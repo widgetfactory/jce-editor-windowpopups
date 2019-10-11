@@ -25,11 +25,15 @@
         WindowPopupsManager: function (ed) {
             var self = this;
 
-            self.editor = ed;
-            self.onOpen = new Dispatcher(self);
-            self.onClose = new Dispatcher(self);
-            self.params = {};
-            self.features = {};
+            this.editor = ed;
+            this.onOpen = new Dispatcher(self);
+            this.onClose = new Dispatcher(self);
+            this.params = {};
+            this.features = {};
+
+            this.zIndex = 10002;
+            this.count = 0;
+            this.windows = {};
         },
 
         /**
@@ -58,7 +62,7 @@
 
             // Run inline windows
             if (!u) {
-                return self.parent(s, p);
+                return new tinymce.WindowManager(this.editor).open(s, p);
             }
 
             u = tinymce._addVer(u);

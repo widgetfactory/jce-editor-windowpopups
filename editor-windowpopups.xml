@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension version="2.5" type="plugin" group="jce" method="upgrade">
   <name>PLG_JCE_EDITOR_WINDOWPOPUPS_TITLE</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <creationDate>October 2019</creationDate>
   <author>Ryan Demmer</author>
   <authorEmail>info@joomlacontenteditor.net</authorEmail>
